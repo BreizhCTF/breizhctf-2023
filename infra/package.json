@@ -1,0 +1,17 @@
+{
+    "name": "breizh2023",
+    "main": "src/index.ts",
+    "scripts": {
+        "pulumi": "pulumi"
+    },
+    "devDependencies": {
+        "@pulumi/docker": "^3.6.1",
+        "@pulumi/random": "^4.8.2",
+        "@types/node": "^14.18.34"
+    },
+    "dependencies": {
+        "@pulumi/kubernetes": "^3.0.0",
+        "@pulumi/kubernetesx": "^0.1.5",
+        "@pulumi/pulumi": "^3.0.0"
+    }
+}

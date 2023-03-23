@@ -1,0 +1,48 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Un exchange poly"
+Auteur: "Teddysbears"
+category: Reverse 
+description: |-4 
+    
+    Bonjour, si vous êtes là, c'est que vous êtes le meilleur de votre domaine. 
+
+    Vous allez devoir échanger avec un binaire plutôt sensible, vous allez devoir faire preuve de beaucoup de politesse ! 
+    
+    Ne vous fiez pas à la première impression, bon courage.
+    
+    Auteur: [Teddysbears](#)
+    
+    
+type: dynamic
+
+# Points
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - Challenge/un_exchange_poly
+
+flags:
+    - BZHCTF{V0u5_3t35_tr3s_P01Y}  
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - polymorphic 
+    - multiple execution needed  
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Difficile 
+

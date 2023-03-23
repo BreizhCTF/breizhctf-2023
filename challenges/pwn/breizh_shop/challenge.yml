@@ -1,0 +1,47 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Breizh Shop"
+Auteur: "0xdeadbeef"
+category: Pwn
+description: |-4
+    ![GIF](https://media.tenor.com/9eXlgcljmCAAAAAd/cat-money.gif)
+    
+    On dirait que la compétition a commencée ! Que diriez-vous de passer par notre boutique de souvenirs entre deux
+    challenges ? Nous avons même un flag à vendre si vous êtes assez riche.
+    
+    Auteur: [0xdeadbeef](#)
+
+type: dynamic
+
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+connection_info: nc challenge.ctf.bzh 30023
+
+# Optional settings
+
+flags:
+    - BZHCTF{4_t1mel355_Class1qu3}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - Pwn
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Très Facile
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - resources/challenge
+    - resources/sources.c

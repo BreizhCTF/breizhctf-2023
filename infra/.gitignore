@@ -1,0 +1,7 @@
+/bin/
+/node_modules/
+kubeconfig*.yaml
+*.log
+.yarn
+builds
+dynamic-challenges

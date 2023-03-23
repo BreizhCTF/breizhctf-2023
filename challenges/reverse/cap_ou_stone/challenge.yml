@@ -1,0 +1,50 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "T'es cap ou t'es stone ?"
+Auteur: "Teddysbears"
+category: Reverse 
+description: |-4 
+    
+    Es-tu cap de m'aider dans mes différentes tâches ? 
+
+    J'espère que tu n'es pas stone j'ai besoin de toi, c'est très important ! 
+    
+    Si tu arrives à m'aider pour toutes mes tâches je te récompenserais comme il se doit !  
+    
+    Auteur: [Teddysbears](#)
+    
+connection_info: nc challenge.ctf.bzh 30024
+    
+type: dynamic
+
+# Points
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - Challenge/cap_ou_stone
+
+flags:
+    - BZHCTF{Po1nt_F4iBl3_tr0p_fOrt_s3lf_M0d1fiC4tion_t0o_fuNnY}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - self modification
+    - mnemonic 
+    - op_str
+    - keystone et capstone
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Moyen

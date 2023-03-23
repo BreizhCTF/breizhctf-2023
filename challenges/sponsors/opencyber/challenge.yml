@@ -1,0 +1,49 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "OPENCYBER - Battleships" # nom du challenge. Proposition : Chaque entreprise peut s'afficher ici. Si jamais plusieurs challenge : "VOTRE ENTREPRISE - 1" / "VOTRE ENTREPRISE - 2". )"
+author: "Rodrigue F." # nom du créateur du challenge
+category: Sponsors # ne pas toucher 
+description: |-4
+    ![OPENCYBER](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0jQ5tT3a4J2tWmh-J1BFKSf9nRnxKN_HxPHzp7hK2&s)
+
+    Un concours visant à confronter des joueurs à une nouvelle IA vient de voir le jour.
+    Parviendrez-vous à la battre ?
+    Les développeurs ont mis un piège et depuis quelques temps, certains scores étranges ont commencé à apparaître dans le leaderboard des tricheurs!
+    Hier, un score très élevé a été posté, et les forums se demandent si quelqu'un n'a pas réussi à contourner la sécurité du jeu.
+
+    Contacts discord : [Rodrigue F.#0599](#)
+    
+    Auteur: [OPENCYBER](https://www.opencyber.com/)
+
+type: dynamic # ne pas toucher
+#  Les challenges sponsors ne seront pas hébergés sur l'infrastructure du breizhctf (le lien vers vos challenges sera mis à dispo))
+connection_info: "https://challenge.breizhctf.joinopencyber.com" # un lien que vous gérez, pas sur l'infra du breizhctf.
+
+# Points # ne pas toucher : système de notation dynamique
+# plus un challenge est résolu, moins il vaudra de points.
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+# Optional settings
+
+flags: # Modifier "Flag" mais garder impérativement BZHCTF{}. Doit respecter la syntaxe BZHCTF{...}
+    - BZHCTF{ST0PCH34T1NG}
+
+topics:
+    - reverse
+    - patch de binaire
+    - race condition
+
+# Vous pouvez inclure des tag comme le type de chall (web, crypto, ...) et la difficulté estimée ((Très Facile, Facile, Moyen, Difficile, Très Difficile))
+tags:
+    - Moyen
+    - Reverse
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

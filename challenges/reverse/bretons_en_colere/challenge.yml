@@ -1,0 +1,46 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Bretons en colère"
+Auteur: "0xdeadbeef"
+category: Reverse
+description: |-4
+    ![colere](https://media.tenor.com/6y7ApASFZNIAAAAC/kaamelott-guethenoc.gif)
+    
+    On va tout cramer faudra pas se demander d'où ça vient !
+
+    Auteur: [0xdeadbeef](#)
+    
+    
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+
+# Optional settings
+
+flags:
+    - BZHCTF{R3V3r5eR_l177le_ch3E5er_uhu-uhu}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - angr
+    - SAT/Z3
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Facile
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - Challenge/breton

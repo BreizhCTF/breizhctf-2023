@@ -1,0 +1,46 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Maintenance"
+Auteur: "Zeecka"
+category: Cryptographie
+description: |-4
+    ![maintenance](https://media.tenor.com/_6OIYttlyJoAAAAC/maintenance.gif)
+    
+    Afin de rendre le BreizhCTF accessible aux utilisateurs sous environnement i3, une interface en ligne de commande a été développée. Suite à plusieurs intrusions, nous avons décidé de passer l'interface en maintenance. En espérant que cela soit suffisant...
+    
+    Auteur: [Zeecka](https://twitter.com/Zeecka_)
+    
+    
+type: dynamic
+connection_info: "nc maintenance.ctf.bzh 30011"
+
+# Points
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+# Optional settings
+
+flags:
+    - BZHCTF{Oh_Noh_You_Pwned_Ze_BreizhCTF_!}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - Facile
+    - ECB copy / past
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Facile
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

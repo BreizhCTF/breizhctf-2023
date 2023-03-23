@@ -1,0 +1,51 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Mutable Potion"
+author: "MK"
+category: Blockchain
+description: |-4
+    ![mutablePotion](https://media.tenor.com/DHXUSNBVwNcAAAAC/potion-cooking.gif)
+
+    Pouvez-vous dépasser les limites d'Ethereum en créant une potion mutable ?
+    
+    Auteur: [MK](#)
+
+type: kubectf
+
+# Points
+value: 500
+extra:
+    template_name: breizhblockchain
+    initial: 500
+    decay: 100
+    minimum: 50
+
+# Optional settings
+
+flags:
+    - BZHCTF{NOt_so_1MMu7AB13_:)}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - Blockchain
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Moyen
+    - EVM
+    - Solidity
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - Docker/blockchain/contracts/mutablePotion.sol
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

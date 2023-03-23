@@ -1,0 +1,36 @@
+
+name: "Power on the LED"
+author: "Berangere"
+category: Autres
+description: |-4
+    ![LED](https://media3.giphy.com/media/elc6ZYiQj9TNDhmRrY/giphy.gif)
+    
+    Cette année, vous allez devoir allumer une led, mais avant cela, piochez une carte "contrainte" et relevez le défi !
+
+    Rendez vous au niveau 0 (rez de chaussée), et revenez avec un flag ;)
+
+    Auteur: [Berangere](#)
+
+
+type: dynamic # ne pas toucher
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+flags: 
+    - BZHCTF{alexandriealexandra}
+    - BZHCTF{ALEXANDRIEALEXANDRA}
+    - BZHCTF{AlexandrieAlexandra}
+    - BZHCTF{alexandrialexandra}
+    - BZHCTF{ALEXANDRIALEXANDRA}
+    - BZHCTF{AlexandriAlexandra}
+
+topics:
+    - Facile
+
+tags:
+    - Facile
+
+version: "0.1"

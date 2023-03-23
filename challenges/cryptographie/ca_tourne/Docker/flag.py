@@ -1,0 +1,1 @@
+flag = b"BZHCTF{50m3_m1x1n9_0f_1c9_4nd_dh_15_fun_15n7_17_4nd_w31c0m3_1n_7h3_c2yp70_fun}"

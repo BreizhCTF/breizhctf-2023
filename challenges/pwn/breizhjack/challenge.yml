@@ -1,0 +1,47 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Breizhjack"
+Auteur: "0xdeadbeef"
+category: Pwn
+description: |-4
+    ![GIF](https://media.tenor.com/FLMtaTbJCb0AAAAC/cards-fail.gif)
+    
+    Mon nouveau jeu en CLI va me rendre riche. Que diriez-vous d'essayer par vous-même ? Comme nous sommes amis, c'est sans ASLR la première nuit ;)
+    
+    Auteur: 0xdeadbeef
+
+    `ssh -p <port> -i challenge.key challenge@challenge.ctf.bzh`
+    
+files:
+    - ./Docker/challenge.key
+
+type: kubectf
+
+value: 500
+extra:
+    template_name: breizhjack
+    initial: 500
+    decay: 100
+    minimum: 50
+
+connection_info: TBA
+
+# Optional settings
+
+flags:
+    - BZHCTF{Sysc477s_&_H34p_based_pAyl0ad5}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - Pwn
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Moyen
+

@@ -1,0 +1,46 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Nanomachines"
+Auteur: "0xdeadbeef"
+category: Pwn
+description: |-4
+    ![GIF](https://media.tenor.com/k6blNeBF_9oAAAAd/nanomachines-son-metal-gear.gif)
+    
+    Oh allez, nous savons tous deux pourquoi vous avez cliqué sur ce challenge en particulier ;)
+    
+    Auteur: [0xdeadbeef](#)
+
+connection_info: nc challenge.ctf.bzh 30027
+
+type: dynamic
+
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+# Optional settings
+
+flags:
+    - BZHCTF{A_L4nd_0f_7h3_tRulY_pWn3ed_d4mm1t}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - Pwn
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Difficile
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - resources/challenge
+    - resources/libc.so.6

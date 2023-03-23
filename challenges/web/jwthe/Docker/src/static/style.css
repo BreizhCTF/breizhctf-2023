@@ -1,0 +1,34 @@
+:root {
+    --the-color: 152, 184, 48;
+}
+body{
+    background: url('/static/the.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+h1, h2, h3, h4, h5, h6, label, th{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 700 !important;
+}
+label{
+    margin-bottom: 1rem;
+}
+.bg-the{
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--the-color), var(--bs-bg-opacity)) !important;
+}
+#preview_img{
+    background: url('/static/drinks/1.jpg') no-repeat center center; 
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+div, p{
+    overflow-wrap: break-word;
+}
+table{
+    border-collapse: collapse;
+}

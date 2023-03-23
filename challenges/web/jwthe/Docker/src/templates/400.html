@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}JWThé{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="jumbotron mt-5 mb-5">
+        <h1 class="display-1 mb-4 text-white">JWThé</h1>
+        <div class="d-inline bg-warning p-3 shadow-sm rounded">Veuillez nous escuser. Il y a eu une erreur dans votre commande !</div>
+    </div>
+    <div class="p-5 rounded shadow bg-white" style="--bs-bg-opacity: .8;">Afin de traiter votre commande, rendez-vous dans votre JWThé le plus proche à l'aide du code d'erreur suivant: {{ debug }}</div>
+</div>
+{% endblock %}

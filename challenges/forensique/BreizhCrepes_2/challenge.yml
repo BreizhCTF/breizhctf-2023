@@ -1,0 +1,61 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "BreizhCrêpes 2/5"
+author: "naacbin"
+category: Forensique
+description: |-4
+    Une fois que l'attaquant a accès à l'ordinateur de Gweltaz, il utilise une vulnérabilité d'escalade de privilège pour obtenir des droits supplémentaires.
+    Le fichier "legit" correspond au stager utilisé pour avoir un accès au PC WKSTN01.
+
+    Retrouver le nom du binaire utilisé pour effectuer l'escalade de privilège et l'horodatage du moment où l'élévation de privilège à eu lieu. 
+    Le format du flag à soumettre est le suivant BZHCTF{file.ext:AAAA-MM-DD HH:MM:SS}
+
+    Author: [Naacbin](https://twitter.com/naacbin)
+
+type: dynamic
+
+# Points
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+# Optional settings
+
+flags:
+    - BZHCTF{UNIDRV.DLL:2023-03-01 13:33:51}
+    - BZHCTF{UNIDRV.DLL:2023-03-01 13:33:52}
+    - BZHCTF{UNIDRV.DLL:2023-03-01 13:33:53}
+    - BZHCTF{UNIDRV.DLL:2023-03-01 13:33:54}
+    - BZHCTF{UNIDRV.DLL:2023-03-01 13:33:55}
+    - BZHCTF{UNIDRV.DLL:2023-03-01 13:33:56}
+    - BZHCTF{UNIDRV.DLL:2023-03-01 13:33:57}
+    - BZHCTF{UNIDRV.DLL:2023-03-01 13:33:58}
+    - BZHCTF{UNIDRV.DLL:2023-03-01 13:33:59}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - CVE-2022-21999/CVE-2022–22718
+    - Spooler
+    - Windows
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Difficile
+    - Windows
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - Challenge/WKSTN01.zip
+    - Challenge/legit
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

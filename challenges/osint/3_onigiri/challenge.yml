@@ -1,0 +1,62 @@
+
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Yakuza (3/5) - Onigiri"
+author: "hashp4"
+category: OSINT
+description: |-4
+    ![gif](https://media.tenor.com/TLf896LW9vkAAAAC/squirtle-eating.gif)
+
+    Voilà ma preuve ! Les tatouages sont une tradition chez les yakuzas. D'ailleurs il revendique haut et fort qu'il appartient à ce groupe et que c'était une obligation. 
+    Bref, maintenant que j'ai ça il faudrait que je travaille sur sa localisation. Je pense que j'en ai pour un moment, c'est jamais chose facile.
+
+    Par où je pourrai bien commencer ? Il faut que je garde la tête froide et que je regroupe ce que je possède déjà sur lui. 
+    Peut-être que je pourrai retourner sur son groupe LINE ou sur son compte Twitter chercher des informations ?
+    Il a forcément dû parler d'une rencontre avec quelqu'un. Ce serait un bon moyen de pivot. Peut-être que cette personne me donnera plus d'informations. 
+
+    Auteur: [hashp4](https://twitter.com/hashp4_)
+
+
+value: 500
+type: dynamic
+image: null
+host: null
+
+# Optional settings
+
+flags:
+    - BZHCTF{g0_l1st3n_t0_t0n1k4ku_j4y!}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - GEOINT
+    - IMINT
+    - SOCMINT
+    - Shazam
+    - Instagram
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Moyen
+
+# Requirements are used to make a challenge require another challenge to be
+# solved before being available.
+# Can be removed if unused
+# Accepts challenge names as strings or challenge IDs as integers
+requirements:
+    - "Yakuza (1/5) - Nihon he yōkoso"
+    - "Yakuza (2/5) - Tebori"
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50

@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  breizhos:
+    container_name: breizhos
+    build: .
+    ports:
+      - 80:80
+    restart: always

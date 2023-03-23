@@ -1,0 +1,47 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "strnCMB"
+Auteur: "Teddysbears"
+category: Reverse 
+description: |-4
+    ![pwd](https://media.tenor.com/kUEHljqh640AAAAC/the-computer-forgot-my-password-password.gif)
+    
+    Je m'étais fait un programme super sécurisé pour récupérer mon mot de passe si je l'oubliais.
+
+    Cependant je ne me souviens plus de l'algorithme que j'avais implémenté à l'époque.  
+    
+    Si tu veux bien m'aider à retrouver mon mot passe ?  
+    
+    Auteur: [Teddysbears](#)
+    
+    
+type: dynamic
+
+# Points
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - Challenge/strncmb
+
+flags:
+    - BZHCTF{C0mB13n_dE_strnCMB} 
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - strncmp
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Très Facile

@@ -1,0 +1,47 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Rouille"
+Auteur: "0xdeadbeef"
+category: Reverse
+description: |-4
+    ![rust](https://media.tenor.com/YRvTpmRrFGAAAAAd/planer-rusty.gif)
+    
+    Mes amis me disent que mon code Rust est illisible. Vous y croyez vous ?
+    
+    Auteur: 0xdeadbeef
+    
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+
+# Optional settings
+
+flags:
+    - BZHCTF{0ut_0f_7h3_m4Ze_!}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - Rust
+    - SAT/Z3
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Moyen
+    - Rust
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - Challenge/rouille
+

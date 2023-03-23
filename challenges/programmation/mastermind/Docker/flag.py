@@ -1,0 +1,1 @@
+FLAG = r"BZHCTF{Th4G4M3___3:D}"

@@ -1,0 +1,47 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Démineur"
+Auteur: "0xdeadbeef"
+category: Pwn
+description: |-4
+    ![deminer](https://media.tenor.com/bbGxyFBNa5kAAAAd/hurt-locker.gif)
+    
+    Vous en avez assez de résoudre des challenges ? Que diriez-vous d'une petite partie de démineur pour vous détendre ?
+    
+    Auteur: [0xdeadbeef](#)
+    
+
+type: dynamic
+
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+connection_info: nc challenge.ctf.bzh 30021
+
+# Optional settings
+
+flags:
+    - BZHCTF{G00dbY3_C4n4rY_m4N}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - Pwn
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Moyen
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - resources/challenge
+    - resources/libc.so.6

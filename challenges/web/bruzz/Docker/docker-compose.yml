@@ -1,0 +1,30 @@
+version: '3.9'
+services:
+  bruzz-flask:
+    container_name: bruzz-flask
+    build: ./web
+    ports:
+      - 80:80
+    environment:
+      MYSQL_USER: dbuser
+      MYSQL_HOST: bruzz-db
+      MYSQL_PASSWORD: userpass
+      MYSQL_DATABASE: bruzz
+      SECRET_KEY: 70c27b35abf011bd1f3d5bdfc69ea3cd7e135a4cddf3b75974a22b885e0fc238
+    # entrypoint: "python3 /challenge/server.py"
+    volumes:
+      - ./web/src/:/challenge/:ro
+    depends_on:
+      - bruzz-db
+    restart: always
+  bruzz-db:
+    container_name: bruzz-db
+    build:
+      context: ./mysql
+      dockerfile: mysql.Dockerfile
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_USER: dbuser
+      MYSQL_PASSWORD: userpass
+      MYSQL_DATABASE: bruzz
+    restart: always

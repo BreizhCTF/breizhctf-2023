@@ -1,0 +1,62 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "1001 pattes"
+Auteur: "Zeecka"
+category: Programmation
+description: |-4
+    ![ant](https://media.tenor.com/Cr263TN869kAAAAi/fireants-ants.gif)
+
+    Les fourmis sont des artistes dont l'inspiration n'est encore que trop peu connu.
+
+    https://www.youtube.com/watch?v=1X-gtr4pEBU (à regarder pour comprendre le challenge)
+
+    Auteur: [Zeecka](https://twitter.com/Zeecka_)
+    
+    
+type: dynamic
+
+# Points
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+# Optional settings
+
+flags:
+    - BZHCTF{aaa2ed309b4ce6caf181f3923e80b136}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - Fourmi de Langton
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Difficile
+    - Automate
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - Challenge/Exemples.zip
+    - Challenge/challenge.png
+
+#hints:
+#    - {
+#        content: "Il s'agit ici d'écrire un algorithme permettant de reproduire les images d'exemples. L'algorithme est visuellement compréhensible sur la vidéo youtube. Une fois implémenté, bruteforcez les paramètres de la configuration pour retrouver l'image du challenge. Pensez à optimisez vos vérifications pour améliorer votre recherche. Le prochain indice contient le nombre de steps exacte (inférieur à 10 000).",
+#        cost: 100
+#    }
+#    - {
+#        content: "L'oeuvre d'art finale contient `7103` steps.",
+#        cost: 100
+#    }
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

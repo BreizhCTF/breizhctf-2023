@@ -1,0 +1,5 @@
+gmpy2
+pyasn1
+pycryptodome
+pyjwt
+fastecdsa

@@ -1,0 +1,32 @@
+version: '3.9'
+services:
+  artgallery-web:
+    container_name: artgallery-web
+    build: .
+    environment:
+      TYPO3_DB_DRIVER: mysqli
+      TYPO3_DB_USERNAME: user
+      TYPO3_DB_PASSWORD: Q9F6ZgE1rn8B3fSS
+      TYPO3_DB_HOST: artgallery-db
+      TYPO3_DB_PORT: 3306
+      TYPO3_DB_NAME: artgallery
+      TYPO3_SETUP_ADMIN_EMAIL: sacha@artgallery.tld
+      TYPO3_SETUP_ADMIN_USERNAME: sacha
+      TYPO3_SETUP_PASSWORD: 1a9viGex77ffXb69
+      TYPO3_PROJECT_NAME: "Art Gallery"
+      TYPO3_CREATE_SITE: "http://artgallery.ctf.bzh/"
+    ports:
+      - 80:80
+    depends_on:
+      - artgallery-db
+    restart: always
+  artgallery-db:
+    container_name: artgallery-db
+    image: mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: 34kCUSRRGF1VdgPa
+      MYSQL_USER: user
+      MYSQL_PASSWORD: Q9F6ZgE1rn8B3fSS
+      MYSQL_DATABASE: artgallery
+    restart: always
+      

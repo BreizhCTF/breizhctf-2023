@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet">
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="desc">
+            Il est recommandé d'utiliser <a href="https://metamask.io/" target="_blank">Metamask</a> et <a href="https://remix.ethereum.org" target="_blank">Remix</a> pour les challenges blockchain.
+            Commencez par <a href="https://support.metamask.io/hc/en-us/articles/360043227612-How-to-add-a-custom-network-RPC#h_01G63GGJ83DGDRCS2ZWXM37CV5">ajouter le réseau blockchain privé</a> à Metamask.<br>
+            <br/>
+            Les champs à renseigner sont:
+            <ul>
+                <li>Network Name: <code>BreizhCTF</code> (peu d'importance)</li>
+                <li>New RPC URL: <code><script>document.write(window.location.href);</script>blockchain</code></li>
+                <li>Chain ID: <code>1337</code></li>
+                <li>Currency Symbol: <code>ETH</code></li>
+            </ul>
+            Il est conseillé de <a href="https://support.metamask.io/hc/en-us/articles/360015488891-How-to-reset-an-account">réinitialiser votre compte Metamask</a> avant de commencer chaque challenge, afin de garantir la bonne réinitialisation des variables locales.<br>
+        </div>
+        <div id="deploy">
+            <input id="wallet" type="text" placeholder="Adresse de votre wallet"/>
+            <select id="challenge">
+                <option value="1">1 - Blockchain-101</option>   
+                <option value="2">2 - Random Game</option>
+                <option value="3">3 - Chateau</option>
+                <option value="4">4 - Lucky</option>
+                <option value="5">5 - Mutable Potion</option>
+                <option value="6">6 - Broceliande</option>
+            </select>
+            <button id="start" style="--clr:#00bdff"><span>Lancer le challenge</span><i></i></button>
+            <div id="error"></div>
+        </div>
+        <div id="address" style="display: none">
+            <div id="labeladdr">Adresse du contract : </div><input id="addr" type="text" value="" readonly/>
+            <button id="faucet" style="--clr:#09ff00"><span>Faucet</span><i></i></button>
+            <button id="flag" style="--clr:#ff9d00"><span>Vérifier le flag</span><i></i></button>
+            <a href="/reset"><button id="reset" style="--clr:#ff1100"><span>Reset</span><i></i></button></a>
+            <div id="message"></div>
+        </div>
+    </div>
+</body>
+</html>

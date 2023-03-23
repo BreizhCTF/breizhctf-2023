@@ -1,0 +1,45 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "La key dans la stone"
+Auteur: "Teddysbears"
+category: Reverse 
+description: |-4
+    Ce binaire ne semble pas faire grand-chose. Pourtant quand je l'exécute, je vois bien qu'il se produit des choses.
+    
+    Je me souviens que celui qui me l'a donné m'a dit qu'un langage ancien me donnerait la clé permettant de résoudre ce mystère.
+    
+    Peut-être ce dernier est le début d'une quête extraordinaire ?
+    
+    Auteur: [Teddysbears](#)
+    
+    
+type: dynamic
+
+# Points
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - Challenge/la_key_dans_la_stone
+
+flags:
+    - BZHCTF{V0u5_4v3z_14_c1e}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - ASM evalué
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Facile

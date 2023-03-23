@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Breizh OS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.png">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <script src="/static/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background: url('static/rennes.jpeg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="jumbotron p-5 rounded shadow bg-white" style="--bs-bg-opacity: .9;">
+            <h1 class="display-4">Breizh OS</h1>
+            <p class="lead">Vous pouvez soumettre votre solution sur cette page. Seul le résultat de la sandbox vous
+                sera renvoyé.</p>
+            <hr class="my-4">
+            <p>Il est conseiller d'effectuer vos tests en local. L'ensemble des sources de la sandbox est disponible
+                dans l'énoncé du challenge.</p>
+            <div class="mb-3">
+                <form method="post" action="/" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-8"><input class="form-control" name="file" type="file" id="file"></div>
+                        <div class="col-4">
+                            <div class="d-grid gap-2"><input type="submit"
+                                    class="btn btn-primary btn-block" value="Envoyer" /></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

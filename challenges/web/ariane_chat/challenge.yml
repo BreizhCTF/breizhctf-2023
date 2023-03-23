@@ -1,0 +1,58 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Ariane chat"
+author: "La brosse Adam"
+category: Web
+description: |-4
+    ![rocket](https://media.tenor.com/RaKoyZ5MI9cAAAAC/doge-rocket.gif)
+    
+    La toute dernière plateforme bretonne "Ariane chat" propose un nouveau service de chat en ligne. Elle est dotée de
+    modération intelligente, mais cette dernière peine à rassembler des financements.
+
+    **Votre mission** : Réaliser un pentest 💥 !
+
+    **Votre but** : Rassurer les investisseurs💸 !
+
+    **La plateforme doit décoller avant 8h 🚀 !**
+    
+    Auteur: [La brosse Adam](https://twitter.com/adam_le_bon)
+    
+files:
+    - ./Challenge/back.zip
+    
+type: kubectf
+
+# Points
+value: 500
+extra:
+    template_name: arianechat
+    initial: 500
+    decay: 100
+    minimum: 50
+
+flags:
+    - BZHCTF{DontPutUserInputIntoYourKeys}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - Audit de code
+    - Node.js
+    - Websocket
+    - Prototype pollution
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Très Difficile
+    - Websocket
+
+hints: []
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

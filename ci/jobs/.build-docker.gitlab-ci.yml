@@ -1,0 +1,14 @@
+
+.build_docker: &build_docker
+  image: docker:latest
+  before_script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+  script:
+    - NAME=$(echo ${NAME:-$(basename $FOLDER)} | sed -e 's/[^a-zA-Z0-9_/-]/_/g' -e 's/^[_.-]*//g')
+    - if [ -z "${DOCKERFILE}" ]; then DOCKERFILE="${FOLDER}/Dockerfile"; fi
+    - docker build --pull -t $CI_REGISTRY_IMAGE/${NAME}:latest -f $DOCKERFILE $FOLDER
+    - |
+      if [[ "$CI_COMMIT_BRANCH" == "$CI_DEFAULT_BRANCH" ]];
+      then
+        docker push $CI_REGISTRY_IMAGE/${NAME}:latest;
+      fi

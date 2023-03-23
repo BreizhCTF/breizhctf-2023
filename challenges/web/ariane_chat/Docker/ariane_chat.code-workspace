@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "back"
+		},
+		{
+			"path": "front"
+		},
+		{
+			"path": "Writeup"
+		}
+	],
+	"settings": {
+		"typescript.tsdk": "back/.yarn/sdks/typescript/lib"
+	}
+}

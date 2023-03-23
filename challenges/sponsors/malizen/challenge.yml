@@ -1,0 +1,42 @@
+
+name: "MALIZEN — Alerte à Malybble — Part 2/2"
+author: "Malizen"
+category: Sponsors
+description: |-4
+    ![MALIZEN](https://cyber-at-stationf.com/uploads/startups/saison-5/malizen-logo-horizontal-color-transparent.png)
+    
+    Le blue team CTF de Malizen & Nybble
+
+    Contexte: Vous et votre équipe jouerez le rôle de David UnderSun, l'analyste engagé pour défendre l’entreprise de fabrication de bouées - Malybble Beach. 
+    Les participants devront se pencher sur les journaux d’événements du SI de l’entreprise. 
+    Vous êtes ici dans le Partie 2 de Threat Hunting d'Alerte à Malybble. 
+    Objectif: Retrouver tous les indices pour reconstituer les attaques (APT et ransomware) qui ont eu lieu. 
+    Contact Discord: [@Malizen](#)
+
+    Auteur: [MALIZEN](https://www.malizen.com/)
+
+
+type: dynamic # ne pas toucher
+connection_info: "https://ctf.nybble-analytics.io/malizen"
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+flags: 
+    - BZHCTF{G00DJoBTHR3ATHUNT3R!M@L1Z3N} 
+    - BZHCTF{G00DJOBTHR3ATHUNT3R!M@L1Z3N} 
+    - BZHCTF{G00DJ0BTHR3ATHUNT3R!M@L1Z3N} 
+
+topics:
+    - Threat_Hunting
+    - Investigation
+    - Blue_team
+    
+tags:
+    - ThreatHunting
+    - Blueteam
+    - Moyen
+
+version: "0.1"

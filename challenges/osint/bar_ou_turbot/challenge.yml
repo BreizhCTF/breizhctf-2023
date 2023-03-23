@@ -1,0 +1,62 @@
+
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Bar ou Turbot ?"
+Auteur: "BOOM"
+category: OSINT
+description: |-4
+    >Un soir d'hiver, quelque part en France,
+    >Un homme erre, ivre et seul,
+    >Il cherche un bar où il a bu,
+    >Mais le nom lui fait cruellement défaut.
+    >
+    >Il se rappelle d'un Starbucks,
+    >Où il a pris un café plus tôt dans la soirée,
+    >Avant de s'engager dans une rue piétonne,
+    >Où gît son destin sous son coeur.
+    >
+    >Il avance pendant environ cent mètres,
+    >Avant que ses yeux ne trouvent un magasin de bandes dessinées fermé,
+    >Mais juste à côté, il aperçoit le bar où il avait passé la nuit.
+    >
+    >Il se remémore les rires des clients et les verres de bière vides,
+    >Mais son esprit s'obstine à ne pas lui rappeler le nom du bar,
+    >Il poursuit sa recherche avec espoir,
+    >Emportant avec lui sa mémoire troublée.
+
+    Le flag est le nom du bar en minuscule et sans espace. Par exemple pour le bar `La Boussole` le flag serait `BZHCTF{laboussole}`.
+
+    Auteur: [BOOM](https://twitter.com/b0oml)
+    
+    
+value: 500
+type: dynamic
+image: null
+host: null
+
+# Optional settings
+
+flags:
+    - BZHCTF{espitchupitos}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - Overpass Turbo
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Moyen
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50

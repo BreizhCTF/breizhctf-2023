@@ -1,0 +1,52 @@
+
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "GeoBus"
+Auteur: "BOOM"
+category: OSINT
+description: |-4
+    ![bus](https://media.tenor.com/bYxjt8SmeawAAAAC/kassypoo.gif)
+    
+    Quel est le nom du théâtre le plus proche ?
+
+    Le flag est le nom du théâtre en minuscule. Par exemple pour le théâtre `Euphoria` le flag serait `BZHCTF{euphoria}`.
+
+    Auteur: [BOOM](https://twitter.com/b0oml)
+    
+    
+value: 500
+type: dynamic
+image: null
+host: null
+
+# Optional settings
+
+flags:
+    - BZHCTF{intiman}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - GEOINT
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Facile
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - Challenge/geobus.jpg
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50

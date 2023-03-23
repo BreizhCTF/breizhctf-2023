@@ -1,0 +1,1 @@
+flag = r"BZHCTF{BurgerQuizSecondOrder}"

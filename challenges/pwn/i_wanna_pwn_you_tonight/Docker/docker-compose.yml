@@ -1,0 +1,11 @@
+version: '3'
+services:
+  chall_64:
+    build: ./64bits
+    ports:
+      - 1337:1337
+
+  chall_32:
+    build: ./32bits
+    ports:
+      - 1338:1338

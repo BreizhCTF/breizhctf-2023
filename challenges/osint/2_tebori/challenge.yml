@@ -1,0 +1,59 @@
+
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Yakuza (2/5) - Tebori"
+author: "hashp4"
+category: OSINT
+description: |-4
+    ![gif](https://media.tenor.com/F8xo36RRX48AAAAC/swag-cat-swagger.gif)
+
+    Parfait, j'ai réussi à retrouver l'individu en question et à rejoindre son groupe d'amis. Le moins qu'on puisse dire, c'est que c'est une vraie mine d'or en terme d'informations.
+    Cependant, rien ne le rattache à ce groupe de yakuza... Mais une note m'interpelle tout de même. Dans celle-ci, il parle visiblement d'un magasin de tatouages et de "Kamon Tomoe".
+    
+    Je sens qu'il y a quelque chose à creuser de ce côté-là.  
+    
+    En-tout-cas, il faut que je continue avant qu'il ne remarque quelque chose. Il a l'air très actif sur ce groupe de discussion.
+    
+    Auteur: [hashp4](https://twitter.com/hashp4_)
+
+
+value: 500
+type: dynamic
+image: null
+host: null
+
+# Optional settings
+
+flags:
+    - BZHCTF{t4tt00s_4r3_p4rt_0f_th3_tr4d1t10n}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - SOCMINT
+    - IMINT
+    - Avis Google
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Facile
+
+# Requirements are used to make a challenge require another challenge to be
+# solved before being available.
+# Can be removed if unused
+# Accepts challenge names as strings or challenge IDs as integers
+requirements:
+    - "Yakuza (1/5) - Nihon he yōkoso"
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50

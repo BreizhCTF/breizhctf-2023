@@ -1,0 +1,78 @@
+@font-face {
+    font-family: FredokaOne;
+    src: url('/static/FredokaOne-Regular.ttf');
+}
+*{
+    font-family: FredokaOne;
+}
+html, body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+body{
+    background-image: url('/static/images/bg.png');
+    background-size: cover;
+}
+#foreground{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-image: url('/static/images/fg.png');
+    background-size: cover;
+    z-index: -1
+}
+#sparkle{
+    width: 100px;
+    height: 100vh;
+    position: fixed;
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 540px;
+    background-color: white;
+    border-radius: 3px 3px 0 0;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+.nav-tabs .nav-link:not(.active):hover, .nav-tabs .nav-link:not(.active):focus {
+    isolation: isolate;
+    border-color: transparent;
+}
+.quizzbox{
+    display: none;
+}
+.btn-quizz, .btn-quizz:hover{
+    width: 100%;
+    color: rgb(0, 0, 0);
+}
+.btn-bleu, .btn-bleu:hover{
+    background-color: #4193ff;
+}
+.btn-rouge, .btn-rouge:hover{
+    background-color: #ff5c33;
+}
+.btn-vert, .btn-vert:hover{
+    background-color: #4eda2c;
+}
+.btn-jaune, .btn-jaune:hover{
+    background-color: #ebdc10;
+}
+#pseudo{
+    font-size: 25px;
+}
+#spanpseudo{
+    color:#ff5c33;
+}
+#spanscore{
+    color: #4eda2c;
+}
+#scoreupper{
+    text-align: center;
+    font-size: 40px;
+    color: #4193ff;
+}

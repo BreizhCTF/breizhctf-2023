@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}JWThé - Récapitulatif de commande{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="jumbotron mt-5 mb-5">
+        <h1 class="display-1 mb-4 text-white">JWThé</h1>
+        <div class="d-inline bg-primary p-3 shadow-sm rounded">Voici votre récapitulatif de commande. Vous pouvez dès à présent retirer votre commande en magasin.</div>
+    </div>
+    <div class="p-5 rounded shadow bg-white" style="--bs-bg-opacity: .8;">
+        <div class="row">
+            <div class="col">
+                <table class="table table-sm table-striped">
+                    <tr><th scope="row">Prénom</th><td>{{ token.firstname }}</td></tr>
+                    <tr><th scope="row">Boisson</th><td>{{ token.drink }}</td></tr>
+                    <tr><th scope="row">Taille</th><td>{{ token.size }}</td></tr>
+                    <tr><th scope="row">Toppings</th><td>{{ token.toppings }}</td></tr>
+                    <tr><th scope="row">Note complémentaire</th><td>{{ token.note }}</td></tr>
+                </table>
+                <a href="/delete"><button id="delete" class="btn btn-danger">Supprimer ma commande</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

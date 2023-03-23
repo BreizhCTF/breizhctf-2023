@@ -1,0 +1,52 @@
+
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Squint"
+Auteur: "Zeecka"
+category: Steganographie
+description: |-4
+    ![squint](https://media.tenor.com/1D7Kn0Dyh8AAAAAC/hmm-revvit.gif)
+
+    Mieux vaut loucher que d'être aveugle.
+
+    Auteur: [Zeecka](https://twitter.com/Zeecka_)
+    
+    
+type: dynamic
+
+# Points
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+# Optional settings
+
+flags:
+    - BZHCTF{Motostereogram?}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - Image reverse search
+    - APNG (GIF alike)
+    - Autostereogram
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Difficile
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - Challenge/squint.png
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

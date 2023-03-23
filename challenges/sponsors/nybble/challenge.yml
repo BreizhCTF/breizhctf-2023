@@ -1,0 +1,56 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "NYBBLE - Alerte à Malybble — Part 1/2" # nom du challenge. Proposition : Chaque entreprise peut s'afficher ici. Si jamais plusieurs challenge : "VOTRE ENTREPRISE - 1" / "VOTRE ENTREPRISE - 2". )"
+author: "Nybble" # nom du créateur du challenge
+category: Sponsors # ne pas toucher 
+description: |-4
+    ![NYBBLE](https://lepoool.tech/app/uploads/2021/04/Nybble-Logo-Text1-600x200-copie-scaled.jpg)
+    
+    Le blue team CTF de Malizen & Nybble
+    
+    Contexte: Vous et votre équipe jouerez le rôle de David UnderSun, l'analyste engagé pour défendre l’entreprise de fabrication de bouées - Malybble Beach. Les participants devront se pencher sur les journaux d’événements du SI de l’entreprise. Vous êtes ici dans le Partie 1 de qualification d’alertes.
+    Objectif: Qualifier correctement le maximum d’alertes (faux positifs ou pas ?) en indiquant les éléments importants de votre prise de décision.
+    Contact Discord: [@Nybble](#)
+
+    Auteur: [NYBBLE](https://nybble-security.io/)
+
+
+type: dynamic # ne pas toucher
+#  Les challenges sponsors ne seront pas hébergés sur l'infrastructure du breizhctf (le lien vers vos challenges sera mis à dispo))
+connection_info: "https://ctf.nybble-analytics.io/nybble" # un lien que vous gérez, pas sur l'infra du breizhctf.
+
+
+# Points # ne pas toucher : système de notation dynamique
+# plus un challenge est résolu, moins il vaudra de points.
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+# Optional settings
+
+flags: # Modifier "Flag" mais garder impérativement BZHCTF{}. Doit respecter la syntaxe BZHCTF{...}
+    - BZHCTF{YOUREAFINEANALYSTFROMNYBBLE}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# La variable "topics" n'est visible que des administrateurs (permet d'avoir des indications rapides sur la solution du challenge).
+# Accepts strings
+topics:
+    - Alert_triage
+    - Fields_investigation
+    - Enrichment
+    - Incident_response
+
+# Vous pouvez inclure des tag comme le type de chall (web, crypto, ...) et la difficulté estimée ((Très Facile, Facile, Moyen, Difficile, Très Difficile))
+# Tags à adapter en fonction du CTFd
+tags:
+    - Facile
+    - Investigation
+    - BlueTeam
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

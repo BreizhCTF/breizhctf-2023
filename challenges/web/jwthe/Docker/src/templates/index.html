@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block title %}JWThé{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="jumbotron mt-5 mb-5">
+        <h1 class="display-1 mb-4 text-white">JWThé</h1>
+        <div class="d-inline bg-the p-3 shadow-sm rounded">Indiquez votre prénom et commandez votre boisson !</div>
+    </div>
+    <div class="p-5 rounded shadow bg-the" style="--bs-bg-opacity: .5;">
+        <form id="form_command">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group mb-3">
+                        <label for="firstname">Prénom</label>
+                        <input type="text" class="form-control" id="firstname" required="required" placeholder="Gwendal...">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="drink">Boisson</label>
+                        <select class="form-control" id="drink">
+                            <option value="1">Frappuccino® Matcha</option>
+                            <option value="2">Teavana™ - Matcha Green Tea Latte</option>
+                            <option value="3">Teavana™ - Iced Matcha Green Tea Latte</option>
+                            <option value="4">Teavana™ - Chai Tea Latte</option>
+                            <option value="5">Teavana™ - Iced Chai Tea Latte</option>
+                            <option value="6">Teavana™ - English Breakfast Tea </option>
+                            <option value="7">Teavana™ - Hibiscus Tea</option>
+                            <option value="8">Teavana™ - Emperor's Cloud Mist Tea</option>
+                            <option value="9">Teavana™ - Mint Citrus Green Tea</option>
+                            <option value="10">Refresha® Strawberry Açai</option>
+                            <option value="11">Refresha® Very Berry</option>
+                            <option value="12">Frappuccino® - Café Caramel </option>
+                            <option value="13">Frappuccino® Coco Choco</option>
+                            <option value="14">Caffè Latte</option>
+                            <option value="15">Iced Latte</option>
+                            <option value="16">Latte Macchiato</option>
+                            <option value="17">Caramel Macchiato</option>
+                            <option value="18">Iced Caramel Macchiato</option>
+                            <option value="19">Cappuccino</option>
+                            <option value="20">Iced Cappuccino</option>
+                            <option value="21">Ristretto Bianco</option>
+                            <option value="22">Cold Brew Latte</option>
+                            <option value="23">Frappuccino® - Choco Chip</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group mb-3">
+                                <label for="size">Taille</label>
+                                <select class="form-control" id="size">
+                                    <option>S</option>
+                                    <option>M</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group mb-3">
+                                <label for="toppings">Toppings</label>
+                                <select class="form-control" id="toppings">
+                                    <option value="">(Aucun)</option>
+                                    <option>Menthe</option>
+                                    <option>Canelle</option>
+                                    <option>Macha</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="preview_img" class="col"></div>
+            </div>
+            <div class="form-group mb-3">
+                <label for="note">Note complémentaire</label>
+                <textarea class="form-control" id="note" rows="3" placeholder="Sans sucre..."></textarea>
+            </div>
+            <div class="form-group">
+                <input class="btn btn-success" type="submit" value="Commander">
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

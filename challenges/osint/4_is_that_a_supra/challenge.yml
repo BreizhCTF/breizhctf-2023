@@ -1,0 +1,59 @@
+
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Yakuza (4/5) - IS THAT A SUPRA ???"
+author: "hashp4"
+category: OSINT
+description: |-4
+    ![gif](https://media.tenor.com/T5heOuw2-qUAAAAC/supra-toyota.gif)
+
+    Yes, une preuve supplémentaire ! J'ai réussi à faire le lien entre notre suspect et un ami rappeur à lui. D'après ses dires, il serait en route pour une nouvelle destination afin de rejoindre une "connaissance".
+
+    J'ai de la chance qu'il soit assez bavard sur son groupe d'amis, il vient visiblement de me laisser un nouvel indice. Avec ceux déjà présent, je devrais pouvoir être en mesure de connaître sa destination finale. 
+
+    Auteur: [hashp4](https://twitter.com/hashp4_)
+
+
+value: 500
+type: dynamic
+image: null
+host: null
+
+# Optional settings
+
+flags:
+    - BZHCTF{w3ll_n0t_4_supr4_just_4_c4rp00l1ng}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - GEOINT
+    - IMINT
+    - SOCMINT
+    - Blablacar
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Difficile
+
+# Requirements are used to make a challenge require another challenge to be
+# solved before being available.
+# Can be removed if unused
+# Accepts challenge names as strings or challenge IDs as integers
+requirements:
+    - "Yakuza (1/5) - Nihon he yōkoso"
+    - "Yakuza (2/5) - Tebori"
+    - "Yakuza (3/5) - Onigiri"
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50

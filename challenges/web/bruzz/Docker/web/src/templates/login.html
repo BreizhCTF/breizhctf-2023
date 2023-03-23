@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block head %}
+<!--
+          _..--¯¯¯¯--.._
+      ,-''              `-.
+    ,'                     `.
+   ,                         \
+  /                           \
+ /          ′.                 \
+'          /  ││                ;
+;       n /│  │/         │      │
+│      / v    /\/`-'v√\'.│\     ,
+:    /v`,———         ————.^.    ;
+'   │  /′@@`,        ,@@ `\│    ;
+│  n│  '.@@/         \@@  /│\  │;
+` │ `    ¯¯¯          ¯¯¯  │ \/││
+ \ \ \                     │ /\/
+ '; `-\          `′       /│/ │′
+  `    \       —          /│  │
+   `    `.              .' │  │
+    v,_   `;._     _.-;    │  /
+       `'`\│-_`'-''__/^'^' │ │        
+              ¯¯¯¯¯        │ │
+    ____ ____ ____ ____    │ /
+   ||  |||  |||  |||  ||   ││
+   ||__|||__|||__|||__||   ││
+   |/__\|/__\|/__\|/__\|   │,
+-->
+<script charset="utf-8" src="/static/js/bootstrap.js"></script>
+<script charset="utf-8" src="/static/js/jquery-3.6.1.min.js"></script>
+<link rel="stylesheet" href="/static/css/bootstrap.css" />
+<link rel="stylesheet" href="/static/css/main.css" />
+{% endblock %}
+{% block footer %}
+<script charset="utf-8" src="/static/js/sparkle.min.js"></script>
+<script charset="utf-8" src="/static/js/main.js"></script>
+{% endblock %}
+{% block main %}
+<div id="foreground"></div>
+<div class="form-body pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <div id="login">
+                <div class="form-group mb-4 mt-4">
+                    <label class="form-label" for="login">Login</label>
+                    <input type="text" id="logininput" placeholder="prenom.nom" class="form-control" />
+                </div>
+                <div class="form-group mb-4 mt-4">
+                    <label class="form-label" for="password">Password</label>
+                    <input type="password" id="passwordinput" class="form-control" />
+                </div>
+                <!-- Submit button -->
+                <button type="button" id="submitlogin" class="btn btn-primary btn-block mb-4">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

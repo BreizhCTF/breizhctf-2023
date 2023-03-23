@@ -1,0 +1,57 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "EncroChatBZH"
+Auteur: "Zeecka"
+category: Mobile
+description: |-4
+    ![phone](https://media.tenor.com/z3n5NPBiYYQAAAAd/vtuber-hololive.gif)
+    
+    Un individu s'est introduit dans le couvent des jacobins et a été arrêté en possession de beurre doux.
+    Son téléphone a été saisi, mais l'individu refuse de coopérer. Menez votre enquête et récupérez son code PIN pour mettre fin à ce commerce illégal !
+
+    Auteur: [Zeecka](https://twitter.com/Zeecka_)
+    
+    
+type: dynamic
+
+# Points
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+# Optional settings
+
+flags:
+    - BZHCTF{0672-SecretCh4t}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - PIN Bruteforce
+    - Deleted messages
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Moyen
+    - Forensique
+
+#hints:
+#    - {
+#        content: "Un joueur du CTF affirme avoir vu l'individu déverouiller son téléphone. D'apès ses dires, son code PIN serait composé de 4 chiffres et finirait par un 2.",
+#        cost: 150
+#    }
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - Challenge/EncroChatBZH.tar.gz
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

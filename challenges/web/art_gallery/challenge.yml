@@ -1,0 +1,51 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Art Gallery"
+Auteur: "Zeecka"
+category: Web
+description: |-4
+    ![art](https://media.tenor.com/OKBKbpyWd9oAAAAd/hu-tesseract.gif)
+    
+    Le plus bel art digital de Bretagne !
+
+    Auteur: [Zeecka](https://twitter.com/Zeecka_)
+    
+    
+type: dynamic
+connection_info: "https://art-gallery.ctf.bzh/"
+
+# Optional settings
+
+# Points
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+flags:
+    - BZHCTF{MyGadgetsAreWorksOfArt}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - Mercurial
+    - Typo3 RCE
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Très Difficile
+
+#hints:
+#    - {
+#        content: "undo.dirstate",
+#        cost: 150
+#    }
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

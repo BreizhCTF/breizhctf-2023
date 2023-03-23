@@ -1,0 +1,17 @@
+{
+    "colors": {
+        "cadetblue": "R",
+        "chartreuse": "R",
+        "hotpink": "L",
+        "red": "L",
+        "seagreen": "L",
+        "white": "R",
+        "yellow": "R"
+    },
+    "sizes": {
+        "cell": 15,
+        "border": 5,
+        "grid": 55
+    },
+    "steps": 7103
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Writeup",
+  "packageManager": "yarn@3.4.1",
+  "dependencies": {
+    "socket.io-client": "^4.6.0"
+  }
+}

@@ -1,0 +1,45 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Alienzh"
+Auteur: "BOOM"
+category: Web
+description: |-4
+    XYZ, un cabinet de recrutement qui opère à l'échelle galactique vient d'ouvrir une antenne sur Terre. En vue de mener des travaux de recherche sur les relations interplanétaires et les possibles effets négatifs que pourrait avoir XYZ sur l'économie terrestre, nous avons mis notre meilleur agent (aka "Liger") sur le coup. Ce dernier a réussi à passer les différents tests de recrutement, mais nous n'avons plus de nouvelles de lui depuis. Lors de son dernier contact, il a fait mention d'une liste des employés. Retrouvez cette liste, avec un peu de chance Liger pourrait y avoir laissé un message.
+
+    Auteur: [BOOM](https://twitter.com/b0oml)
+    
+    
+type: dynamic
+connection_info: "https://alienzh.ctf.bzh/"
+
+# Points
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+# Optional settings
+
+flags:
+    - BZHCTF{S0urc3_Map_M4g1c}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - Vue.js
+    - Source map
+    - Enumeration
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Facile
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

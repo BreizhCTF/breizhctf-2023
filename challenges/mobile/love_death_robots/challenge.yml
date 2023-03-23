@@ -1,0 +1,52 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Love, Death & Robots"
+Auteur: "Zeecka"
+category: Mobile
+description: |-4
+    ![gif](https://media.tenor.com/WepvosEqfVAAAAAC/screaming-golden-siren.gif)
+    
+    « Robot moi ? serieusement ^^ haha on me l avait pas sortie celle la depuis loooongtemps :) demande a mes potes si je suis robot tu vas voir les reponses que tu vas te prendre XD ... je pense que je suis le mec le moins robot de ma bande de 11 meilleurs amis ! »  -- ChatCPT
+
+    Désactivez l'android à l'aide du passe administrateur avant qu'il ne devienne incontrôlable.
+
+    Auteur: [Zeecka](https://twitter.com/Zeecka_)
+    
+    
+type: dynamic
+
+# Points
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+# Optional settings
+
+flags:
+    - BZHCTF{WouldYouLikeACupOfTeaCipher?}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - Kotlin
+    - Tea Cipher
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Moyen
+    - Kotlin
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - Challenge/LoveDeathRobots.apk
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

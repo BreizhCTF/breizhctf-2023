@@ -1,0 +1,52 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "BreizhCrêpes 5/5"
+author: "naacbin"
+category: Forensique
+description: |-4
+    Maël l'administrateur du DC vient de retrouver les fichiers de registres d'avant les attaques sur DC01.
+    Vérifier que l'attaquant n'a pas gardé une autre porte dérobée sur le système.
+
+    Vous devez retrouver le nom du binaire utilisé pour effectuer la persistance et l'horodatage de l'écriture dans la clé de registre.
+    Le format du flag à soumettre est le suivant BZHCTF{filename.ext:AAAA-MM-DD HH:MM:SS}
+
+    Author: [Naacbin](https://twitter.com/naacbin)
+
+type: dynamic
+
+# Points
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+# Optional settings
+
+flags:
+    - BZHCTF{t1m3_pr0v1d3r.dll:2023-03-01 14:49:29}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - Windows
+    - Registry
+    - NTP
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Facile
+    - Windows
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - Challenge/DC01.zip
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

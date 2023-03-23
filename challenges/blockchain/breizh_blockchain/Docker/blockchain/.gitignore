@@ -1,0 +1,4 @@
+node_modules
+artifacts
+cache
+/scripts/minivers.js

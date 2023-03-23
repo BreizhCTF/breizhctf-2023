@@ -1,0 +1,66 @@
+
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Yakuza (1/5) - Nihon he yōkoso"
+author: "hashp4"
+category: OSINT
+description: |-4
+    ![gif](https://media.tenor.com/o8tSgjSUe30AAAAC/cat-bowl.gif)
+    
+    Oh tiens, je viens de recevoir un message. À cette heure-là ? Sur mon tél pro ? C'est étrange. Il faut que je l'ouvre sans plus tarder.
+    Moi qui pensais pouvoir me détendre au BreizhCTF avec une bonne galette saucisse, me voilà de nouveau sur une enquête...
+
+    "*Bonsoir Conan,*
+
+    *J'espère que votre séjour à Rennes se passe pour le mieux. Malheureusement, nous devons l'interrompre. 
+    Nous vous sollicitons exceptionnellement cette nuit dans le cadre de la mission d'investigation YKZ_001.
+    Comme vous le savez, nous traquions il y a plusieurs mois un groupe de yakuzas suite à la compromission de nature lucrative d'un OIV. 
+    Cependant, ils n'ont laissé presque aucune trace depuis ce jour.*
+
+    *Ce n'est qu'il y a quelques minutes que nous avons intercepté un message du groupe à propos de leur prochaine attaque. 
+    Par chance, il contient une signature. Celle-ci se compose d'une suite de caractères en japonais : "土方剛史".*
+
+    *Nous sommes certains qu'avec cette information, vous serez à même de retrouver l'un des acteurs de ce groupe.*
+
+    *Nous comptons sur votre expertise pour mener à bien cette enquête. N'oubliez pas que chaque détail compte. Collectez, notez et recoupez les informations, c'est essentiel à la réussite de toute mission. 
+    Vous ne disposez que de quelques heures pour retrouver l'individu et aider à découvrir leur prochaine cible.*
+
+    *Bonne chance.*"
+    
+    Auteur: [hashp4](https://twitter.com/hashp4_)
+
+
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+type: dynamic
+image: null
+host: null
+
+# Optional settings
+
+flags:
+    - BZHCTF{L1N3_1s_v3ry_f4m0us_1n_J4p4n}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - LINE
+    - Twitter
+    - SOCMINT
+    - DeepL
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Moyen
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

@@ -1,0 +1,18 @@
+{
+  "name": "breizh-blockchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "netcat.js",
+  "dependencies": {
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.7",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@openzeppelin/contracts": "^4.8.1",
+    "cookie-parser": "^1.4.6",
+    "ethereumjs-util": "^7.1.5",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3"
+  },
+  "devDependencies": {
+    "hardhat": "^2.12.7"
+  }
+}

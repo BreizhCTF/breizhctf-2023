@@ -1,0 +1,61 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "BreizhOS"
+Auteur: "Aiglematth"
+category: Reverse
+description:  |-4
+    Dans ce challenge, vous allez goûter à la crème de la crème de la signature bretonne !
+    Un OS maison, spécialement conçu pour l'occasion, implémente un cryptosystème de signature avec une clé secrète. Saurez-vous la récupérer ?
+    Afin de résoudre ce challenge, vous allez devoir construire un ELF et l'envoyer sur notre VM BreizhOS. Nous lancerons ce binaire avec un utilisateur standard en vous renvoyant l'output du binaire seulement.
+    Pensez à regarder les link et différents scripts pour comprendre comment le fonctionnement de l'OS pour concevoir votre binaire.
+    
+    Auteur: [Aiglematth](#)
+
+connection_info: "https://breizhos.ctf.bzh"    
+
+type: dynamic
+
+# Points
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+# Optional settings
+
+flags:
+    - BZHCTF{--tRUST_me_i_m_an_engineer--}
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - Challenge/breizh_os.tar.gz
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+# Accepts strings
+topics:
+    - rust
+    - programming
+    - prng
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - Difficile
+    - Rust
+    - OS
+
+#hints:
+#    - {
+#        content: "Nos amis les chinois savent résoudre ça...",
+#        cost: 100
+#    }
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

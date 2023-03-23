@@ -1,0 +1,81 @@
+# => Generation des images de bases
+# Les images de bases servent à développer ses conteneurs plus facilement, en fournissant une base de logiciels
+# déjà configurés et prêt à lancer
+#
+# "Generate base images jobs" permet de scanner le dossier `docker` à la recherche de Dockerfile
+# Pour chaque Dockerfile il génère les jobs gitlab à éxecuter
+#
+# "Build base images" démarre les jobs gitlab générés par le dernier jobs
+
+workflow:
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+
+variables:
+  GIT_LFS_SKIP_SMUDGE: "1"
+
+Generate docker jobs:
+  image: debian:bullseye-slim
+  rules:
+    - changes: 
+        - challenges/**/*
+        - docker/**/*
+  script:
+    - ./ci/scripts/gen_docker_builds.sh > docker_builds.yml
+  artifacts:
+    paths:
+      - docker_builds.yml
+
+Run jobs:
+  needs:
+    - Generate docker jobs
+  rules:
+    - changes: 
+        - challenges/**/*
+        - docker/**/*
+  variables:
+    GIT_LFS_SKIP_SMUDGE: "1"
+  trigger:
+    strategy: depend
+    include:
+      - artifact: docker_builds.yml
+        job: Generate docker jobs
+
+.Deploy dev environment:
+  image:
+    name: pulumi/pulumi
+    entrypoint: [""]
+  needs:
+    - job: Run jobs
+      optional: true
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  environment:
+    name: main
+    deployment_tier: staging
+    url: http://www.ctf.bzh
+  script:
+    - cd infra
+    - cp $KUBECONFIG_FILE ./kubeconfig.yaml
+    - yarn install
+    - pulumi stack select k3s
+    - pulumi up --yes --skip-preview
+
+.Reconfigure ctfd:
+  image: python:3-slim
+  needs:
+    - job: Deploy dev environment
+      optional: true
+    - job: Run jobs
+      optional: true
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      changes: 
+        - "**/challenge.yml"
+  before_script:
+    - mkdir -p .ctf
+    - cp $CTFCLI_CONFIG .ctf/config
+  script:
+    - pip3 install ctfcli
+    - ./ci/scripts/configure_ctfd.py
